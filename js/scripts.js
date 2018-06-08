@@ -13,7 +13,7 @@ function toBeepBoop(number) {
     } else if (number[i] / 3 === 0) {
       resultArray.push("I'm sorry Dave, I can't do that") // WHY IS THIS NOT WORKING
     } else {
-      resultArray.push(number[i])
+      resultArray.push(number[i] + ' ')
       alert(resultArray)
     }
   }
