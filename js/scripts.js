@@ -4,15 +4,15 @@ function toBeepBoop(number) {
 
   var resultArray = []
 
-  for (i=0; i<=number; i++) { // dont set this to length, it explodes
-    if (i.toString().includes('0')) {
+  for (index=0; index<=number; index++) { // dont set this to length, it explodes
+    if (index.toString().includes('0')) {
       resultArray.push(' ' + 'Beep')
-    } else if (i.toString().includes('1')) {
+    } else if (index.toString().includes('1')) {
       resultArray.push(' ' + 'Boop')
-    } else if (i % 3 === 0) { // this also just needs to be i and not the position in the array
+    } else if (index % 3 === 0) { // this also just needs to be i and not the position in the array
       resultArray.push(" " + "I'm sorry Dave, I can't do that") // WHY IS THIS NOT WORKING
     } else {
-      resultArray.push(' ' + i)
+      resultArray.push(' ' + index)
     }
   }
   return resultArray
@@ -28,6 +28,10 @@ $(document).ready(function() {
     var number = $('input#ogNumber').val();
 
     $('#results').show();
-    $('ul').append('<li>' + toBeepBoop(number) + '</li>');
+    $('ul').append('<li><em>' + toBeepBoop(number) + '</em></li>');
+  })
+
+    $('#answers').on('shown.bs.modal', function () {
+    $('#answers').trigger('focus')
   })
 })

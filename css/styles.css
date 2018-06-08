@@ -5,3 +5,8 @@ button {
 #results {
   display: none;
 }
+
+body {
+  background-color: grey;
+  font-family: verdana;
+}
