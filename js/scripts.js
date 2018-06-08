@@ -1,9 +1,13 @@
 // business logic
 
 function toBeepBoop(number) {
+  var numbers = number.toString().split('')
+  var firstArray = []
+  var finalNumber = ''
+  
 
-var hasZero = number.contains('0')
-var hasOne = number.contains('1')
+}
+
 
 // user logic
 
@@ -12,7 +16,6 @@ $(document).ready(function() {
   $('#ogNumber').submit(function(event) {
     alert('working');
     event.preventDefault();
-
   })
 })
 
