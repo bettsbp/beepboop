@@ -4,6 +4,8 @@ button {
 
 #results {
   display: none;
+  overflow: scroll;
+  height: 500px;
 }
 
 body {
