@@ -29,6 +29,6 @@ $(document).ready(function() {
 
     $('#results').show();
     $('ul').append('<li><em>' + toBeepBoop(number) + '</em></li>');
-    
+
   })
 })
