@@ -9,10 +9,10 @@
 _A simple program that takes a number from a user and returns a range of numbers from 0 to the chosen number with some rule._
 
 ## Rules
-* _The program will take a numerical value less than 4 and multiply it by 'I'._
-* _If there are four I's turn into a IV_
-* _If there is a 9, replace with IX_
-* _If there are five of the same character, replace with the corresponding roman numeral_
+* _If a number contains 0, replace with Beep_
+* _If a number contains 1, replace with Boop_
+* _If a number contains a number divisble by 3, replace with 'I'm sorry Dave, I can't do that'_
+* _Count ALL of the numbers up to the inputted number_
 
 ## Expected Behaviors
 
