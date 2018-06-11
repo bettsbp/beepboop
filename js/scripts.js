@@ -4,13 +4,13 @@ function toBeepBoop(number) {
 
   var resultArray = []
 
-  for (index=0; index<=number; index++) { // dont set this to length, it explodes
-    if (index % 3 === 0) {
+  for (index=0; index<=number; index++) {
+    if (index % 3 === 0 && index != 0) {
       resultArray.push(' ' + "I'm sorry Dave, I can't do that")
     } else if (index.toString().includes('1')) {
       resultArray.push(' ' + 'Boop')
-    } else if (index.toString().includes('0')) { // this also just needs to be i and not the position in the array
-      resultArray.push(' ' + 'Beep') // WHY IS THIS NOT WORKING
+    } else if (index.toString().includes('0')) {
+      resultArray.push(' ' + 'Beep')
     } else {
       resultArray.push(' ' + index)
     }
@@ -30,5 +30,5 @@ $(document).ready(function() {
     $('#results').show();
     $('ul').append('<li><em>' + toBeepBoop(number) + '</em></li>');
 
-  })
-})
+  });
+});
